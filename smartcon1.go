@@ -33,10 +33,7 @@ docker-compose -f docker-compose-simple.yaml up
 
 Terminal 2:
 
-docker exec -it chaincode bash
-
-
-cd iit
+docker exec -it chaincode ba
 go build
 
 
@@ -62,7 +59,6 @@ peer chaincode instantiate -n mycc -v 0 -c '{"Args":["a","10"]}' -C myc
 // peer chaincode query -C myc -n mycc -c '{"Args":["readMarble","marble1"]}'
 
 */
-``
 
 package main
 
